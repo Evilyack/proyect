@@ -1,0 +1,208 @@
+
+
+body::-webkit-scrollbar {
+    width: 0.1px;
+    background-color: #ffffff00;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fefefe00;
+
+}
+
+.title{
+    margin: 20px;
+    width: 98%;
+    border-bottom: 1px solid rgba(92, 92, 92, 0.634);
+}
+
+.title h1{
+    padding-left: 5px;
+    font-size: 30px;
+    font-style: italic;
+}
+#icon{
+  display: flex;
+}
+#icon h5{
+  margin-left: 5px;
+}
+.card {
+    margin-top: 20px;
+    margin-left: 36px !important;
+ margin-bottom: 40px;
+   transition: all 300ms;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-text{
+    margin-left: 20px;
+}
+
+.card:hover .card-text{
+    color: green !important;
+}
+
+.card-text span{
+    font-weight: 600;
+}
+
+.navbar{
+    height: 80px;
+    transition: all 300ms;
+    position: fixed !important;
+    width: 100%;
+    z-index: 3;
+    animation-name: bajar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    box-shadow: 1px 1px 10px 3px inset green;
+}
+
+@keyframes bajar{
+  from{
+      transform: translatey(-100px);
+        box-shadow: 1px 1px 10px 3px inset rgba(186, 17, 220, 0.763);
+  }
+  to{
+      transform: translatey(0px);
+      box-shadow: 1px 1px 10px 3px inset rgb(69, 206, 10);
+  }
+  
+    }
+
+.navbar li{
+    margin-left: 30px;
+}
+
+.navbar-brand{
+    margin-left: 25px;
+    font-weight: 900;
+    font-style: italic;
+    color: green !important; 
+}
+.dropdown-menu ul{
+  width: 100% !important;
+  padding: auto !important;
+}
+.dropdown-item{
+  width: 100% !important;
+}
+/*Buscador*/
+
+#inputSearch{
+  display:block;
+  position: relative;
+  top: -80px;
+  transition: all 500ms;
+}
+#box-search{
+  position: fixed;
+  z-index: 4;
+  background-color: rgba(44, 42, 42, 0.999);
+  list-style: none;
+  top: 70px;
+  left: 1260px;
+  width: 205px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 3px inset green;
+  padding: 10px;
+  display: none;
+}
+
+#box-search a{
+  text-decoration: none;
+  color: rgb(205, 201, 201);
+}
+
+.boton{
+    margin-left: 20px;
+}
+.btnCards{
+    width: 90%;
+   
+}
+
+#carouselExampleIndicators{
+    top: 95px;
+    display: block;
+    width: 60%;
+    left: 21%;
+    box-shadow: 1px 0px 10px 3px rgb(91, 90, 90);
+    margin-bottom: 125px;
+}
+
+#cover{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+  z-index: 2;
+  transition: all 100ms;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.acerca{
+    display: flex;
+    margin-left: 200px;
+    height: 500px;
+    width: 1000px;
+   justify-content:space-between;
+
+}
+.acerca h1{
+    text-align: center;
+}
+
+
+@media (max-width: 670px) {
+    #carouselExampleFade {
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 896px) {
+    #carouselExampleIndicators{ 
+      left: 20%;
+      margin-bottom: 60px;
+     
+    }
+  }
+
+  .nav2{
+    display: none;
+    
+  }
+
+  .nav1:hover .nav2{
+    display: block;
+  }
+
+  #nanatus{
+    margin-bottom: 10px;
+
+  }
+
+  #tokyoGhoul{
+    margin-bottom: 10px;
+  }
+  
+
+  .home{
+    text-align: center;
+  }
+
+  .homeH1{
+    font-size: 15px !important;
+    margin-top: -6px;
+  }
