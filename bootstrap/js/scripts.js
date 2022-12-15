@@ -10,7 +10,7 @@ document.getElementById("buttom_search").addEventListener("click", inputView)
 
 
 
-//Ceclaracion de variables
+//Declaracion de variables
 inputSearch = document.getElementById("inputSearch");
 box_search  = document.getElementById("box-search");
 cover  = document.getElementById("cover");
@@ -29,18 +29,18 @@ function buscador_interno (){
         a = li[i].getElementsByTagName("a")[0];
         textValue = a.textContent || a.innerText;
 
-        if(textValue.toUpperCase().indexOf(filter) > -1){
-             li[i].style.display = ""; 
-             box_search.style.display = "block"
-           
-             if(inputSearch.value == ""){
-                box_search.style.display ="none"
-             }
-             
-        }else{
-            li[i].style.display = "none";  
-    
-          }
+        if (textValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            box_search.style.display = "block"
+
+            if (inputSearch.value == "") {
+                box_search.style.display = "none"
+            }
+
+        } else {
+            li[i].style.display = "none";
+
+        }
 
     }
 }
